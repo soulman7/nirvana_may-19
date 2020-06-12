@@ -10,8 +10,8 @@ app.config['SQLALCHEMY_DATABASE_URI'] = 'sqlite:///person.db'
 
 db =SQLAlchemy(app)
 
-stock_url ='https://api.worldtradingdata.com/api/v1/stock?symbol={}&api_token=FZKP0jcyRUsVimi1RSuTQJT4VFy1RmhxyIb5OrCZiWJE8oZA0SSkkWtWgg1w'
-intra_day ='https://intraday.worldtradingdata.com/api/v1/intraday?symbol={}&range=1&interval=1&api_token=FZKP0jcyRUsVimi1RSuTQJT4VFy1RmhxyIb5OrCZiWJE8oZA0SSkkWtWgg1w'
+stock_url =''
+intra_day =''
 
 class Person(db.Model):
     id =db.Column(db.Integer ,primary_key=True)
